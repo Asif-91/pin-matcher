@@ -51,6 +51,9 @@ input[type='text']:focus {
 #displayNumber{
     text-align: center;
 }
+#screenInput{
+    text-align: center;
+}
 .numbers {
     margin: 30px 0;
 }

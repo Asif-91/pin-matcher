@@ -18,28 +18,28 @@
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input id="screen" class="form-control" type="text" >
+                    <input id="screenInput" class="form-control" type="text" >
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
-                              <div class="button" onclick="screen.value +='7' ">7</div>
-                              <div class="button" onclick="screen.value +='8'">8</div>
-                              <div class="button" onclick="screen.value +='9'">9</div>
+                              <div class="button" onclick="screenInput.value += '7'">7</div>
+                              <div class="button" onclick="screenInput.value +='8'">8</div>
+                              <div class="button" onclick="screenInput.value +='9'">9</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button" onclick="screen.value +='4'">4</div>
-                              <div class="button" onclick="screen.value +='5'">5</div>
-                              <div class="button" onclick="screen.value +='6'">6</div>
+                              <div class="button" onclick="screenInput.value +='4'">4</div>
+                              <div class="button" onclick="screenInput.value +='5'">5</div>
+                              <div class="button" onclick="screenInput.value +='6'">6</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button" onclick="screen.value +='1'">1</div>
-                              <div class="button" onclick="screen.value +='2'">2</div>
-                              <div class="button" onclick="screen.value +='3'">3</div>
+                              <div class="button" onclick="screenInput.value +='1'">1</div>
+                              <div class="button" onclick="screenInput.value +='2'">2</div>
+                              <div class="button" onclick="screenInput.value +='3'">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button" > < </div>
-                                <div class="button" onclick="screen.value +='0'">0</div>
-                                <div class="button" >C</div>
+                                <div class="button" onclick="screenInput.value = screenInput.value.slice(0,-1)"> &lt; </div>
+                                <div class="button" onclick="screenInput.value +='0'">0</div>
+                                <div class="button" onclick="screenInput.value=''">C</div>
                             </div>
                     </div>
                 </div>
